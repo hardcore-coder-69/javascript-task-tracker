@@ -31,6 +31,7 @@ function renderTasks() {
         }
         taskItem.innerHTML = `
           <div class="task-is">
+            <i class="fa fa-thumb-tack pin ${task.completed?'hide':''}"></i>
             <input type="checkbox" onchange="toggleTaskCompleted(${index})" ${task.completed ? 'checked' : ''}>
             <span class="${task.completed ? 'line-through' : ''}">${task.description}</span>
           </div>
@@ -92,6 +93,7 @@ function renderFilteredTasks(filteredTasks) {
         }
         taskItem.innerHTML = `
             <div class="task-is">
+                <i class="fa fa-thumb-tack pin ${task.completed?'hide':''}"></i>
                 <input type="checkbox" onchange="toggleTaskCompleted(${tasks.indexOf(task)})" ${task.completed ? 'checked' : ''}>
                 <span class="${task.completed ? 'line-through' : ''}">${task.description}</span>
             </div>

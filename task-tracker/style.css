@@ -186,6 +186,16 @@ h1 {
     font-style: italic;
 }
 
+.pin {
+    color: red;
+    font-size: 35px;
+    transform: rotate(-45deg) translate(2px, -32px);
+}
+
+.hide {
+    opacity: 0;
+}
+
 @media screen and (max-width: 600px) {
     .task-input {
         flex-direction: column;
